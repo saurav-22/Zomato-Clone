@@ -1,7 +1,14 @@
+[![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)](https://www.jenkins.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
+[![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white)](https://www.sonarqube.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+
 # 🚀 Zomato Clone DevOps Project
 
-Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with code quality checks using SonarQube and vulnerability scanning using Trivy.
+Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with code quality checks using SonarQube and vulnerability scanning using Trivy. 
 
+### [Click here for the Zomato Clone App Github Repository](https://github.com/your-username/zomato-clone-devops)
 ---
 
 ## 🖥️ 1. Launch EC2 Instance
