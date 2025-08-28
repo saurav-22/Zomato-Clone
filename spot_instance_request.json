@@ -1,0 +1,132 @@
+{
+    "IamFleetRole": "arn:aws:iam::<account-id>:role/aws-ec2-spot-fleet-tagging-role",
+    "AllocationStrategy": "capacityOptimized",
+    "TargetCapacity": 1,
+    "ValidFrom": "2025-08-24T03:27:03.000Z",
+    "ValidUntil": "2026-08-24T03:27:03.000Z",
+    "TerminateInstancesWithExpiration": true,
+    "Type": "request",
+    "SpotMaxTotalPrice": "0.03",
+    "LaunchSpecifications": [
+        {
+            "ImageId": "ami-0861f4e788f5069dd",
+            "KeyName": "my-keypair",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 7500,
+                        "VolumeSize": 10,
+                        "VolumeType": "gp3",
+                        "Encrypted": false,
+                        "Throughput": 125
+                    }
+                }
+            ],
+            "TagSpecifications": [
+                {
+                    "ResourceType": "instance",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "Zomato-App"
+                        }
+                    ]
+                }
+            ],
+            "NetworkInterfaces": [
+                {
+                    "DeviceIndex": 0,
+                    "SubnetId": "subnet-aaa111",
+                    "DeleteOnTermination": true,
+                    "Groups": [
+                        "sg-xxxxxx"
+                    ],
+                    "AssociatePublicIpAddress": true
+                }
+            ],
+            "InstanceType": "t3.large"
+        },
+        {
+            "ImageId": "ami-0861f4e788f5069dd",
+            "KeyName": "my-keypair",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 7500,
+                        "VolumeSize": 10,
+                        "VolumeType": "gp3",
+                        "Encrypted": false,
+                        "Throughput": 125
+                    }
+                }
+            ],
+            "TagSpecifications": [
+                {
+                    "ResourceType": "instance",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "Zomato-App"
+                        }
+                    ]
+                }
+            ],
+            "NetworkInterfaces": [
+                {
+                    "DeviceIndex": 0,
+                    "SubnetId": "subnet-bbb222",
+                    "DeleteOnTermination": true,
+                    "Groups": [
+                        "sg-xxxxxx"
+                    ],
+                    "AssociatePublicIpAddress": true
+                }
+            ],
+            "InstanceType": "t3.large",
+        },
+        {
+            "ImageId": "ami-0861f4e788f5069dd",
+            "KeyName": "my-keypair",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "Iops": 7500,
+                        "VolumeSize": 10,
+                        "VolumeType": "gp3",
+                        "Encrypted": false,
+                        "Throughput": 125
+                    }
+                }
+            ],
+            "TagSpecifications": [
+                {
+                    "ResourceType": "instance",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "Zomato-App"
+                        }
+                    ]
+                }
+            ],
+            "NetworkInterfaces": [
+                {
+                    "DeviceIndex": 0,
+                    "SubnetId": "subnet-ccc333",
+                    "DeleteOnTermination": true,
+                    "Groups": [
+                        "sg-xxxxxx"
+                    ],
+                    "AssociatePublicIpAddress": true
+                }
+            ],
+            "InstanceType": "t3.large"
+        }
+    ]
+}
