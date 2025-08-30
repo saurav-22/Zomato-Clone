@@ -4,14 +4,14 @@
 [![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white)](https://www.sonarqube.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 
-# 🚀 Zomato Clone DevOps Project
+# Zomato Clone DevOps Project
 
 Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with code quality checks using SonarQube and vulnerability scanning using Trivy. 
 
 ### [Click here for the Zomato Clone App Github Repository](https://github.com/your-username/zomato-clone-devops)
 ---
 
-## 🖥️ 1. Launch EC2 Instance
+## 1. Launch EC2 Instance
 
 > **Tip:**  
 > To save costs while learning, use a **Spot Instance**. For production, consider an On-Demand instance.
@@ -33,7 +33,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-### ⚡️ Alternative: Use Spot Instance Config File
+### Alternative: Use Spot Instance Config File
 
 - Download `spot_instance_request.json`.
 - Fill in placeholders: Account ID, KeyName, SubnetID, Security Group ID.
@@ -46,7 +46,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 📦 2. Installing Packages
+## 2. Installing Packages
 
 - Copy contents of `packages-installation.sh`.
 - In terminal:
@@ -58,7 +58,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 🛠️ 3. Setup Jenkins
+## 3. Setup Jenkins
 
 1. Ensure **port 8080** is open in your security group.
 2. Open `http://<instance-ip>:8080` in your browser.
@@ -70,7 +70,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 5. Install **Suggested Plugins**.
 6. Create admin user.
 
-### 🔌 Install Required Plugins
+### Install Required Plugins
 
 - Eclipse Temurin Installer
 - SonarQube Scanner
@@ -81,7 +81,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 - Docker API
 - docker-build-step
 
-### 🧰 Configure Tools
+### Configure Tools
 
 - **JDK Installation**
   - Name: `jdk24`
@@ -95,7 +95,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 🔍 4. Run SonarQube & Configure Jenkins Credentials
+## 4. Run SonarQube & Configure Jenkins Credentials
 
 1. Start SonarQube:
    ```bash
@@ -111,7 +111,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## ✅ 5. Add Quality Gate in SonarQube
+## 5. Add Quality Gate in SonarQube
 
 - Go to **Administration > Configuration > Webhooks**
 - Create webhook:
@@ -119,14 +119,14 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 🐳 6. Configure ECR for Docker Images
+## 6. Configure ECR for Docker Images
 
 1. Go to **AWS Console > ECR**.
 2. Create repository: `project/zomato`.
 
 ---
 
-## 📝 7. Setup Jenkins Pipeline
+## 7. Setup Jenkins Pipeline
 
 - Open the `Jenkinsfile` from the repo.
 - Edit these variables:
@@ -136,7 +136,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 🔐 8. Create IAM Role for EC2
+## 8. Create IAM Role for EC2
 
 1. Go to **AWS Console > IAM > Roles**.
 2. Create Role:
@@ -147,7 +147,7 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## ⚙️ 9. Create Jenkins Job
+## 9. Create Jenkins Job
 
 1. Go to **Jenkins Dashboard**.
 2. Click **New Item**.
@@ -160,13 +160,13 @@ Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with co
 
 ---
 
-## 🌐 10. Access the Website
+## 10. Access the Website
 
 - Open: `http://<instance-ip>:3000` in your browser.
 
 ---
 
-## 📚 Summary
+## Summary
 
 This project demonstrates a complete DevOps workflow:
 - **Infrastructure provisioning** (EC2 Spot Instance)
