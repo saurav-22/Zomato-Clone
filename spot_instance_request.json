@@ -86,7 +86,7 @@
                     "AssociatePublicIpAddress": true
                 }
             ],
-            "InstanceType": "t3.large",
+            "InstanceType": "t3.large"
         },
         {
             "ImageId": "ami-0861f4e788f5069dd",
