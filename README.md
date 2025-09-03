@@ -8,7 +8,7 @@
 
 Deploy a **ReactJS Zomato Clone** app on a Docker container via Jenkins, with code quality checks using SonarQube and vulnerability scanning using Trivy. 
 
-### [Click here for the Zomato Clone App Github Repository](https://github.com/your-username/zomato-clone-devops)
+### [Click here for the Zomato Clone App Github Repository](https://github.com/Aj7Ay/Zomato-Clone.git)
 ---
 
 ## 1. Launch EC2 Instance
